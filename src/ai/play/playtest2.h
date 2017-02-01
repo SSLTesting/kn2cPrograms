@@ -15,8 +15,6 @@ public:
     virtual int enterCondition();
     //virtual Tactic* getTactic(int id);
 
-    int Parabola_intersection (Vector2D, Vector2D, double, Vector2D *, Vector2D *);
-
 private:
     TacticTest2 *tTest1;
 

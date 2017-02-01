@@ -972,7 +972,7 @@ void PlayTest::execute()
     }
 */
 
-    if (c == -1)
+    /*if (c == -1)
     {
         tTest1->setpos( Vector2D(-1500, 250) );
         tactics[2] = tTest1;
@@ -1259,7 +1259,7 @@ void PlayTest::execute()
     if ( (wm->ourRobot[3].pos.loc - Vector2D(-500, -250)).length() < 50 && t == 3)
         c = 32;
 */
-    cout << c << endl;
+   // cout << c << endl;
 
     //tTest1->setpos( Vector2D (-1000, 0) );
     //tactics[2] = tTest1;
@@ -1267,4 +1267,11 @@ void PlayTest::execute()
     //tTest1->setpos( Vector2D(-1000, 0) );
     //tactics[0] = tTest1;
 
+  //  wm->debug_type=2;
+   // wm->debug_pos.append(wm->ball.pos.loc);
+//    for(int i=0;i<wm->kn->ActiveAgents().length();i++){
+//        tactics[wm->kn->ActiveAgents()[i]] = tTest;
+//    }
+    //wm->debug_pos.clear();
+    //wm->debug_pos.append(Vector2D (0,0));
 }
