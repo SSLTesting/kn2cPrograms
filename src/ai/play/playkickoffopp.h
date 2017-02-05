@@ -11,6 +11,7 @@ public:
     virtual void execute();
     //virtual Tactic* getTactic(int id);
     virtual int enterCondition();
+    void Positioning(int RobotID);
 
 private:
     TacticGoalie*   tGolie;
@@ -19,10 +20,14 @@ private:
     TacticAttacker* tAttackerRight;
     TacticDefender* tDefenderLeft;
     TacticDefender* tDefenderRight;
-
+    int kickerId;
     virtual void initRole();
     void setTactics(int index);
-    void setPositions();
+    int maximumGoalChanceID(QList<int> oppPlayer);
+    bool isInsideTriangle(Vector2D pos,Vector2D vertex1);
+    Position KickerPositioning(Vector2D oppKicker);
+    void findOppKickerId();
+    bool notNearToAny(int index,int oppNum);
 };
 
 #endif // PLAYKICKOFFOPP_H

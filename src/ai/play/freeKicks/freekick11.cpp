@@ -23,7 +23,6 @@ int freeKick11::enterCondition(Level level)
             return 300;
     }
 
-    return 0;
 }
 
 void freeKick11::setPositions(QList<int> our)
